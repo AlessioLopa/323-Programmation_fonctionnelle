@@ -8,11 +8,11 @@ namespace Ex_Rando
 {
     internal class Trackpoint
     {
-        public Trackpoint(double latitude, double longitude, double elevatiion)
+        public Trackpoint(string latitude, string longitude, string elevatiion)
         {
-            _latitude = latitude;
-            _longitude = longitude;
-            _elevatiion = elevatiion;
+            _latitude = Convert.ToDouble(latitude);
+            _longitude = Convert.ToDouble(longitude);
+            _elevatiion = Convert.ToDouble(elevatiion);
         }
 
         public double _latitude { get; set; }
